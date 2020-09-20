@@ -3,10 +3,6 @@ class TasksController < ApplicationController
   before_action :require_user_logged_in
   def index
     @tasks = Task.all
-    if logged_in?
-      @task = current_user.tasks.build  # form_with 用
-      @tasks = current_user.tasks.order(id: :desc)
-    end
   end
 
   def show
