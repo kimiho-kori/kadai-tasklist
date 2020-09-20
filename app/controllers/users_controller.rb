@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
   before_action :require_user_logged_in, only: [:index, :show,]
   
+=======
+>>>>>>> parent of 94d5c72... login user
   def index
     
   end

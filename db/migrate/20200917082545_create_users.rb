@@ -6,6 +6,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :password_digest
 
       t.timestamps
+      
+      has_many :microposts
     end
   end
 end
