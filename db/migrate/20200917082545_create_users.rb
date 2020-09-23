@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
 
       t.timestamps
       
-      has_many :microposts
+      
     end
   end
 end
