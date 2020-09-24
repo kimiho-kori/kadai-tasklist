@@ -2,7 +2,7 @@
 
 <%= render 'form', message: @task %>
 <%= form_with(model: @task, local: true) do |f| %>
- <%= render 'layouts/error_messages', model: f.object %>
+ 
 <% end %>
 
 <%= link_to '一覧に戻る', tasks_path %>
