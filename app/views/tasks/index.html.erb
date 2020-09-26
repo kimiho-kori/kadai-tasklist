@@ -1,11 +1,9 @@
 <% if logged_in? %>
   <div class="row">
     <aside class="col-sm-4">
-      
-        <%= link_to '新規メッセージの投稿', new_task_path %>
-      
+      <%= link_to '新規メッセージの投稿', new_task_path %>
     </aside>
-    <div class="col-sm-8">
+    <div class="col-sm-4">
       <%= render 'tasks/tasks', tasks: @tasks %>
     </div>
   </div>
