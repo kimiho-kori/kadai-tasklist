@@ -1,8 +1,6 @@
 <h1>新規タスク作成ページ</h1>
 
 <%= render 'form', message: @task %>
-<%= form_with(model: @task, local: true) do |f| %>
- 
-<% end %>
+
 
 <%= link_to '一覧に戻る', tasks_path %>

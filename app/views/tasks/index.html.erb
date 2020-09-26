@@ -1,17 +1,14 @@
 <% if logged_in? %>
   <div class="row">
     <aside class="col-sm-4">
-      <%= link_to '新規メッセージの投稿', new_task_path %>
+      <%= link_to '新規タスクの投稿', new_task_path %>
     </aside>
     <div class="col-sm-4">
       <%= render 'tasks/tasks', tasks: @tasks %>
     </div>
   </div>
 <% else %>
-<div class="center jumbotron">
   <div class="text-center">
-    <h1>Welcome to the TaskList</h1>
     <%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %>
   </div>
-</div>
 <%end%>
