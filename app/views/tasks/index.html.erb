@@ -1,10 +1,8 @@
- <div class="row">
+  <div class="row">
     <aside class="col-sm-4">
       <%= link_to '新規タスクの投稿', new_task_path %>
     </aside>
-    <div class="col-sm-4">
       <%= render 'tasks', tasks: @tasks %>
-    </div>
   </div>
 <% unless logged_in? %>
   <div class="text-center">
